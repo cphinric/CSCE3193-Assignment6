@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parker Hinrichs' Page</title>
+        <script>
+            function question1(answerNum) {
+                if (answerNum == 1) {
+                    document.getElementById("result1").innerHTML = "Correct!";
+                }
+                else {
+                    document.getElementById("result1").innerHTML = "Incorrect :(";
+                }
+            }
+            function question2(answerNum) {
+                if (answerNum == 1) {
+                    document.getElementById("result2").innerHTML = "Correct!";
+                }
+                else {
+                    document.getElementById("result2").innerHTML = "Incorrect :(";
+                }
+            }
+            function question3(answerNum) {
+                if (answerNum == 1) {
+                    document.getElementById("result3").innerHTML = "Correct!";
+                }
+                else {
+                    document.getElementById("result3").innerHTML = "Incorrect :(";
+                }
+            }
+            function resetAnswers() {
+                document.getElementById("result1").innerHTML = "";
+                document.getElementById("result2").innerHTML = "";
+                document.getElementById("result3").innerHTML = "";
+            }
+        </script>
+    </head>
+    <body style="background-color: blue;">
+        <h1 style="text-align: center;background-color:red">Parker Hinrichs' Page</h1>
+        <p style="text-align: center;font-size:45px;background-color: aliceblue">
+            WELCOME TO THE SONIC THE HEDGEHOG QUIZ
+
+            Sonic the Hedgehog is a popular Japanese Videogame franchise produced by SEGA. The franchise has been loved since its creation in 1991. 
+
+            <p style="text-align: center;font-size:20px;background-color: aliceblue"><a href="https://en.wikipedia.org/wiki/Sonic_the_Hedgehog">For more information follow this link!</a>
+        </p>
+        <h2 style="color: white">QUIZ</h2>
+        <p style="color: white">
+            Question 1: What color was Knuckles orignially supposed to be?
+            <ol>
+                <li style="color: white" onclick="question1(2)">Red</li>
+                <li style="color: white" onclick="question1(2)">Yellow</li>
+                <li style="color: white" onclick="question1(1)">Green</li>
+            </ol>
+            <p style="color: white" id="result1"></p>
+        </p>
+        <p style="color: white">
+            Question 2: Who says the famous line "Nothing personel kid"
+            <ol>
+                <li style="color: white" onclick="question2(2)">Sonic</li>
+                <li style="color: white" onclick="question2(1)">Coldsteel The Hedgehog</li>
+                <li style="color: white" onclick="question2(2)">Vector the Crocodile</li>
+            </ol>
+            <p style="color: white" id="result2"></p>
+        </p>
+        <p style="color: white">
+            Question 3: Select Dr. Robotnik
+        </p>
+        <img src="eggman.jpg" onclick="question3(1)"style="width:200px;height:200px;" > 
+        <img src="sonic.jpg" onclick="question3(2)"style="width:200px;height:200px;">
+        <img src="ChrisChan.jpg" onclick="question3(2)"style="width:200px;height:200px;">
+
+        <p style="color: white" id="result3"></p>
+
+        <button onclick="resetAnswers()">Reset</button>
+    </body>
+</html>
